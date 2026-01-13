@@ -36,5 +36,5 @@ tmp/
 .vs/
 
 # Claude Code temporary files
-tmpclaude-*/
+tmpclaude-*
 .claude/
