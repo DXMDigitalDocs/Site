@@ -2,7 +2,7 @@
 title: BIM 3D Viewer
 layout: default
 parent: DM BIM Submission
-nav_order: 3
+nav_order: 4
 ---
 
 ## BIM 3D Model Viewer

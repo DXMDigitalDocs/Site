@@ -8,4 +8,4 @@ nav_order: 3
 
 ### Zones
 
-{% include bimstandarddata/appendix-c-usages-codes/buildings-table.md %}              
+{% include bimstandarddata/appendix-c-usages-codes/zones-table.md %}              

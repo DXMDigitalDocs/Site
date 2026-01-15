@@ -8,4 +8,4 @@ nav_order: 4
 
 ### Spaces
 
-{% include bimstandarddata/appendix-c-usages-codes/buildings-table.md %}              
+{% include bimstandarddata/appendix-c-usages-codes/spaces-table.md %}              
