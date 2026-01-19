@@ -9,8 +9,6 @@ nav_order: 3
 
 This document contains a list of common technical questions the BIM Support team has received in relation to BIM submissions. The document is divided into four sections for ease of navigation: **Model Preparation, Model Submission, Submission Self-Assessment and Misc**. For general questions on the BIM mandate, please check <https://buildindubai.gov.ae/bim>
 
-This document was last updated on 01/07/2025.
-
 # **Model Preparation**
 
 **Q1: I am working on a new BIM model, and it is required that the project complies with DM BIM standards, where shall I get the standard documentation?**
@@ -392,8 +390,6 @@ No. The approval is only regarding complying with the DM BIM submission requirem
 
 My upload to the online submission fails. There could be different reason why the upload and processing to the platform fails. Please check the error list below.
 
-<span class="mark">\[ARUN TO ADD OTHER ERROR CODES\]</span>
-
 | **Error Code** | **Reason** |
 |------------------------------------|------------------------------------|
 | BID\_10001 | This error indicates a DB issue. Please contact the BIM support team for assistance. |
@@ -447,20 +443,7 @@ For more inquiries, please contact the following email address: **geodubai@dm.go
 
 Check “**BIM E-Submission\_Revit Appendix.pdf”** document for full details.
 
-<span class="mark">\[ARUN TO INSERT SOME TIP ON EXPORT ETC.\]</span>
 
 **  **
 
-# **APPENDIX III – BIMcollab Zoom**
 
-<span class="mark">\[ARUN TO REVIEW AND UPDATE\]</span>
-
-Opening Models
-
-Checking Building Levels
-
-Checking Element Hosting
-
-Checking Space
-
-Checking Proxy Elements
