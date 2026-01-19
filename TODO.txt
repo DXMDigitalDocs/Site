@@ -1,4 +1,3 @@
-- Replace DM BIM -> DXM Digital
 - Add support page with ref to adding issues
 - Add disclaimer page
 - Website icon
