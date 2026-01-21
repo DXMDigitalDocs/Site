@@ -1,7 +1,7 @@
 ---
-title: Information Requirements
+title: Element Attributes
 layout: default
-parent: DM BIM Submission
+parent: Information Requirements
 nav_order: 2
 ---
 
