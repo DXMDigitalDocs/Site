@@ -5,7 +5,7 @@ parent: Tools
 nav_order: 2
 ---
 
-## BIM 3D Model Viewer 2 (IFClite)
+## IFClite (Works fully offline - no files are uploaded to external servers)
 
 <iframe src="{{ site.baseurl }}/assets/ifc-viewer-2.html" style="width: 100%; height: 600px; border: 1px solid #ccc;"></iframe>
 
