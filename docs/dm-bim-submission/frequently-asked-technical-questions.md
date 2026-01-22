@@ -89,7 +89,7 @@ If you are sure the information doesn’t apply to an entity, you can place a de
 
 Appendix-C lists the building, unit and space usages. For Building and Spaces, the values of the highlighted attributes in the figure below should be filled in from the list defined in Appendix-C depending on each space usage.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image5.png" style="width:11.98194in;height:3.63472in" alt="Appendix-C attributes for building and space usages" />
+<img src="{{ site.baseurl }}/assets/faq-media/image5.png" style="width:11.98194in;height:3.63472in" alt="screenshot" />
 
 ### **Q14: I am filling in the building, unit and space usages as per Appendix C, what should I do if I don't find the usage I am looking for in Appendix C?**
 
@@ -127,7 +127,7 @@ No. For building, unit and space usages, the DM BIM usages must be used as per A
 
 Parking slots should be exported to IfcSpace PARKING, for that you must map the parking family, if you are using Revit, to IfcSpace PARKING as shown below. A similar process may be used when using other authoring BIM tools.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image6.png" style="width:8.94734in;height:5.52996in" alt="Revit IFC export settings for mapping parking family to IfcSpace PARKING" />
+<img src="{{ site.baseurl }}/assets/faq-media/image6.png" style="width:8.94734in;height:5.52996in" alt="screenshot" />
 
 ### **Q21: What should I do if the IFC files exported from my BIM model are too large?**
 
@@ -151,7 +151,7 @@ This typically happens when unneeded model elements such furniture and cosmetic 
 
 If you consider the gate level 'DMD' 3.05 m as ±0 as an example, you should place the project base point at the GA\_GateLevel level and set the project base point elevation to 3.05 m. You also need to set the GateLevel attribute required by the standard for the site as 3.05. With this, when you export the model to IFC, the IfcBuildingStorey for the GA\_GateLevel level will have a global Z value equal to 3.05m. Figure below shows how to change the elevation of the gate level to the DMD value when using Revit.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image7.png" style="width:10.0023in;height:4.63648in" alt="Revit settings showing how to set gate level elevation to DMD value" />
+<img src="{{ site.baseurl }}/assets/faq-media/image7.png" style="width:10.0023in;height:4.63648in" alt="screenshot" />
 
 It is also recommended to place the internal origin at the GA\_GateLevel level and this will ensure the Global Z coordinate for the IfcSite in the IFC model equal to the gate level input. Check Question [‎](#_Ref177377693) for details.
 
@@ -173,7 +173,7 @@ Yes, you can export your Revit project to multiple IFC files without splitting y
 
 By default, rooms, areas, or spaces are exported even when the Export only elements visible in view is ticked. To exclude rooms, areas, or spaces that are not in the visible view from exporting, you need to select these elements and tick the “not export” attribute on these elements.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image8.png" style="width:12in;height:7.625in" alt="Revit IFC export settings for exporting visible elements and spaces in 3D views" />
+<img src="{{ site.baseurl }}/assets/faq-media/image8.png" style="width:12in;height:7.625in" alt="screenshot" />
 
 ### **Q29: What information do I need to provide for a space that is part of a unit?**
 
@@ -197,12 +197,12 @@ If you are not able to find the right space usage from Appendix C. You can conta
 
 | Description | Illustration |
 |------------------------------------|------------------------------------|
-| When there is no false ceiling, the space height is to the lowest structural element point as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.png" style="width:5.34154in;height:2.78074in" alt="IfcSpace height without false ceiling - to structural slab" /> |
-| When there is false ceiling, the space height to the lowest point of the bottom of false ceiling as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.2.png" style="width:5.31172in;height:3.02392in" alt="IfcSpace height with false ceiling - to ceiling bottom" /> |
+| When there is no false ceiling, the space height is to the lowest structural element point as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.png" style="width:5.34154in;height:2.78074in" alt="screenshot" /> |
+| When there is false ceiling, the space height to the lowest point of the bottom of false ceiling as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.2.png" style="width:5.31172in;height:3.02392in" alt="screenshot" /> |
 
 ### **Q34: I am a bit confused on level naming, is there an illustration to show how this should be done?**
 
-<img src="{{ site.baseurl }}/assets/faq-media/image11.png" style="width:8.8738in;height:6.59166in" alt="Illustration of DM BIM level naming convention" />
+<img src="{{ site.baseurl }}/assets/faq-media/image11.png" style="width:8.8738in;height:6.59166in" alt="screenshot" />
 
 ### **Q35: I noticed that some elements in the IFC model are not hosted in the correct level. Is there a way to fix this issue?**
 
@@ -216,7 +216,7 @@ For the first case, the resolution is by identifying the affected elements in th
 
 For the second case, a parameter called ‘IfcSpatialContainer’ can be created as shown in the image below and set the parameter values of the affected elements to the desired level name.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image12.png" style="width:12in;height:3.30556in" alt="Creating IfcSpatialContainer parameter in Revit to fix element hosting" />
+<img src="{{ site.baseurl }}/assets/faq-media/image12.png" style="width:12in;height:3.30556in" alt="screenshot" />
 
 ## **Submission Self-Assessment**
 
@@ -244,13 +244,13 @@ We noticed that in the Revit versions that we tested greyed out <u>Boolean prope
 
 Yes. The IFC files for the BIM submission should include only the GA\_GateLevel and RD\_RoadLevel and the floor levels. You don’t need to delete other levels in the BIM model that are not required for submission. If you are using Revit, you can switch off the ‘BuildingStorey’ tickbox under the level and this will keep the level in the model but it will not be exported in the IFC model. The figure below shows how a level can be switched off for IFC exporting.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image14.png" style="width:9.46382in;height:5.07694in" alt="Revit level properties showing BuildingStorey checkbox to exclude levels from IFC export" />
+<img src="{{ site.baseurl }}/assets/faq-media/image14.png" style="width:9.46382in;height:5.07694in" alt="screenshot" />
 
 ### **Q40:** <span id="_Ref177377693" class="anchor"></span>**I checked my IFC files in a desktop IFC viewer and I see that IFC Site Z value is different from the Z value of the GA\_GateLevel level, Is this an issue?**
 
 No, this is not an issue to worry about. When exporting BIM models from Revit to IFC, the IfcSite location is derived from the internal origin’s location. To ensure that the elevation value (Z) of the IfcSite matches the Z value of the GA\_GateLevel level, you need to place the GA\_GateLevel level at the internal origin at the start of the modeling process, as the internal origin point cannot be moved like other points (See the screenshot below).
 
-<img src="{{ site.baseurl }}/assets/faq-media/image15.png" style="width:9.24404in;height:1.46742in" alt="Revit internal origin placement at GA_GateLevel" />
+<img src="{{ site.baseurl }}/assets/faq-media/image15.png" style="width:9.24404in;height:1.46742in" alt="screenshot" />
 
 However, if the above is followed and then there has been any change to the gate level elevation, the Z values will not match when exporting to IFC file. Still, this is not an issue as it is mentioned above, just something to keep in mind.
 
