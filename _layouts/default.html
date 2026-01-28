@@ -7,65 +7,65 @@ layout: table_wrappers
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
 <body>
-  <a class="skip-to-main" href="#main-content">Skip to main content</a>
-  {% include icons/icons.html %}
-  {% if page.nav_enabled == true %}
+    <a class="skip-to-main" href="#main-content">Skip to main content</a>
+    {% include icons/icons.html %}
+    {% if page.nav_enabled == true %}
     {% include components/sidebar.html %}
-  {% elsif layout.nav_enabled == true and page.nav_enabled == nil %}
+    {% elsif layout.nav_enabled == true and page.nav_enabled == nil %}
     {% include components/sidebar.html %}
-  {% elsif site.nav_enabled != false and layout.nav_enabled == nil and page.nav_enabled == nil %}
+    {% elsif site.nav_enabled != false and layout.nav_enabled == nil and page.nav_enabled == nil %}
     {% include components/sidebar.html %}
-  {% endif %}
-  <div class="main" id="top">
-    {% include components/header.html %}
-    <div class="main-content-wrap">
-      {% include components/breadcrumbs.html %}
-      <div id="main-content" class="main-content">
-        <main>
-          {% if site.heading_anchors != false %}
-            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
-          {% else %}
-            {{ content }}
-          {% endif %}
-
-          {% if page.has_toc != false %}
-            {% include components/children_nav.html %}
-          {% endif %}
-        </main>
-        {% include components/footer.html %}
-      </div>
-    </div>
-    {% if site.search_enabled != false %}
-      {% include components/search_footer.html %}
     {% endif %}
-  </div>
+    <div class="main" id="top">
+        {% include components/header.html %}
+        <div class="main-content-wrap">
+            {% include components/breadcrumbs.html %}
+            <div id="main-content" class="main-content">
+                <main>
+                    {% if site.heading_anchors != false %}
+                    {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+                    {% else %}
+                    {{ content }}
+                    {% endif %}
 
-  {% if site.mermaid %}
+                    {% if page.has_toc != false %}
+                    {% include components/children_nav.html %}
+                    {% endif %}
+                </main>
+                {% include components/footer.html %}
+            </div>
+        </div>
+        {% if site.search_enabled != false %}
+        {% include components/search_footer.html %}
+        {% endif %}
+    </div>
+
+    {% if site.mermaid %}
     {% include components/mermaid.html %}
-  {% endif %}
+    {% endif %}
 
-  <!-- Dialogflow Messenger Chat Widget -->
-  <df-messenger
-    project-id="dxmdigitaldocs"
-    agent-id="519a0156-2ebd-48fb-acf1-be20ad52153c"
-    language-code="en"
-    max-query-length="-1">
-    <df-messenger-chat-bubble
-      chat-title="DxMDigitalDocs-AI-Agent">
-    </df-messenger-chat-bubble>
-  </df-messenger>
-  <style>
-    df-messenger {
-      z-index: 999;
-      position: fixed;
-      --df-messenger-font-color: #000;
-      --df-messenger-font-family: Google Sans;
-      --df-messenger-chat-background: #f3f6fc;
-      --df-messenger-message-user-background: #d3e3fd;
-      --df-messenger-message-bot-background: #fff;
-      bottom: 16px;
-      right: 16px;
-    }
-  </style>
+    <!-- Dialogflow Messenger Chat Widget -->
+    <df-messenger project-id="dxmdigitaldocs"
+                  agent-id="519a0156-2ebd-48fb-acf1-be20ad52153c"
+                  language-code="en"
+                  max-query-length="-1">
+        <df-messenger-chat chat-title="Dxie">
+        </df-messenger-chat>
+    </df-messenger>
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: Google Sans;
+            --df-messenger-chat-background: #f3f6fc;
+            --df-messenger-message-user-background: #d3e3fd;
+            --df-messenger-message-bot-background: #fff;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 350px;
+        }
+    </style>
 </body>
 </html>
