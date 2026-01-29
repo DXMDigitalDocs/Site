@@ -1,5 +1,5 @@
 ---
-title: Training
+title: Training Videos
 layout: default
 parent: DM BIM Submission
 nav_order: 9
