@@ -1,11 +1,11 @@
 ---
-title: BIM Standard
+title: Dubai BIM Standard
 layout: default
 parent: DM BIM Submission
 nav_order: 2
 ---
 
-## BIM Standard
+## Dubai BIM Standard
 
 <iframe src="{{ site.baseurl }}/assets/bim-standard/DubaiBuildingPermitBIMStandards.pdf" style="width: 100%; height: 600px; border: 1px solid #ccc;"></iframe>
 
